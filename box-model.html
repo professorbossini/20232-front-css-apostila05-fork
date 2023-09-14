@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .caixa1, .caixa2{
+            width: 300px;
+            padding: 50px;
+            background-color: lightgray;
+            border: 5px solid black;
+        }
+        .caixa1{
+            border: 5px solid black;
+            padding: 50px;
+            box-sizing: content-box;
+            /* padrão das caixas do html - o tamanho da box é só o tamanho da box, e o padding e margem são contados á parte. */
+        }
+        .caixa2{
+            box-sizing: border-box;
+            /* já na border box, o width é o que determina o tamanho total da caixa. logo, ele tira o tamanho do padding, border, margin etc. do tamanho do conteúdo (por isso faz sentido o nome border box) */
+        }
+        .rodape{
+            background-color: lightblue;
+            padding: 12px;
+            border: 1px solid white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <p class="caixa1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora eius consequuntur aliquam id esse? Veritatis hic explicabo iure fugit ullam.</p>
+        <p class="caixa2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet rem, corrupti animi porro vel cumque aut voluptatem mollitia totam autem.</p>
+        <footer class="rodape">volte sempre.</footer>
+    </article>
+</body>
+</html>
