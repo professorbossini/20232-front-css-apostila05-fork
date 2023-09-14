@@ -1,0 +1,5 @@
+p{
+    /* quando colocamos o !important, ele prevalece sobre todas as outras (anulando o efeito cascata) */
+    /* se houver mais de uma regra como !important, o efeito cascata passa a existir somente com os marcados como impor. */
+    /* entretanto, é bom usarmos essa ferramenta somente quando estamos usando alguma ferramenta como o boostrap */
+}
